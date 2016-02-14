@@ -12,6 +12,10 @@
 		80CED3811C5681FA0004B4C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CED37F1C5681FA0004B4C8 /* Main.storyboard */; };
 		80CED3831C5681FA0004B4C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CED3821C5681FA0004B4C8 /* Assets.xcassets */; };
 		80CED3861C5681FA0004B4C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CED3841C5681FA0004B4C8 /* LaunchScreen.storyboard */; };
+		80CED38F1C5683700004B4C8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CED38E1C5683700004B4C8 /* Post.swift */; };
+		80CED3921C568F990004B4C8 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CED3911C568F990004B4C8 /* PostCell.swift */; };
+		80CED3951C56980A0004B4C8 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CED3941C56980A0004B4C8 /* AddPostVC.swift */; };
+		80CED3981C5744F30004B4C8 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CED3971C5744F30004B4C8 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		80CED3821C5681FA0004B4C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80CED3851C5681FA0004B4C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80CED3871C5681FA0004B4C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80CED38E1C5683700004B4C8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		80CED3911C568F990004B4C8 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		80CED3941C56980A0004B4C8 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		80CED3971C5744F30004B4C8 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		80CED37A1C5681FA0004B4C8 /* my-hood-developes */ = {
 			isa = PBXGroup;
 			children = (
+				80CED3961C5744D70004B4C8 /* Services */,
+				80CED38D1C56835E0004B4C8 /* Model */,
+				80CED3901C568F760004B4C8 /* View */,
+				80CED3931C5697CC0004B4C8 /* Controller */,
 				80CED37B1C5681FA0004B4C8 /* AppDelegate.swift */,
-				80CED37D1C5681FA0004B4C8 /* ViewController.swift */,
-				80CED37F1C5681FA0004B4C8 /* Main.storyboard */,
 				80CED3821C5681FA0004B4C8 /* Assets.xcassets */,
-				80CED3841C5681FA0004B4C8 /* LaunchScreen.storyboard */,
 				80CED3871C5681FA0004B4C8 /* Info.plist */,
 			);
 			path = "my-hood-developes";
+			sourceTree = "<group>";
+		};
+		80CED38D1C56835E0004B4C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80CED38E1C5683700004B4C8 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		80CED3901C568F760004B4C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80CED37F1C5681FA0004B4C8 /* Main.storyboard */,
+				80CED3841C5681FA0004B4C8 /* LaunchScreen.storyboard */,
+				80CED3911C568F990004B4C8 /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		80CED3931C5697CC0004B4C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80CED37D1C5681FA0004B4C8 /* ViewController.swift */,
+				80CED3941C56980A0004B4C8 /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		80CED3961C5744D70004B4C8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				80CED3971C5744F30004B4C8 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CED38F1C5683700004B4C8 /* Post.swift in Sources */,
+				80CED3921C568F990004B4C8 /* PostCell.swift in Sources */,
+				80CED3951C56980A0004B4C8 /* AddPostVC.swift in Sources */,
+				80CED3981C5744F30004B4C8 /* DataService.swift in Sources */,
 				80CED37E1C5681FA0004B4C8 /* ViewController.swift in Sources */,
 				80CED37C1C5681FA0004B4C8 /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +334,7 @@
 				80CED38C1C5681FA0004B4C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
